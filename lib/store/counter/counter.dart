@@ -8,6 +8,9 @@ abstract class _Counter with Store {
   @observable
   int value = 0;
 
+  @computed
+  int get counter => value;
+
   @action
   void increment() {
     value++;

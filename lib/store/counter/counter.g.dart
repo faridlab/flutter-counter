@@ -9,6 +9,13 @@ part of 'counter.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$Counter on _Counter, Store {
+  Computed<int> _$counterComputed;
+
+  @override
+  int get counter => (_$counterComputed ??=
+          Computed<int>(() => super.counter, name: '_Counter.counter'))
+      .value;
+
   final _$valueAtom = Atom(name: '_Counter.value');
 
   @override
@@ -51,7 +58,8 @@ mixin _$Counter on _Counter, Store {
   @override
   String toString() {
     return '''
-value: ${value}
+value: ${value},
+counter: ${counter}
     ''';
   }
 }
