@@ -12,7 +12,6 @@ class CounterApp extends StatefulWidget {
 }
 
 class _CounterAppState extends State<CounterApp> {
-  // Counter counter = Counter();
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
