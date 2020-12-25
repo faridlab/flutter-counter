@@ -25,3 +25,9 @@ $ flutter run
 
 # Testing
 To Be Defined...
+
+# Publish
+- [Playstore - Counter+](https://play.google.com/store/apps/details?id=com.utmostphere.counterplus)
+- Appstore
+
+
