@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
-import 'package:playingNumber/store/counter/counter.dart';
+import 'package:counterplus/store/counter/counter.dart';
 
 class CounterApp extends StatefulWidget {
   CounterApp({Key key, this.title}) : super(key: key);
